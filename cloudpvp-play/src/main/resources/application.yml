@@ -6,6 +6,30 @@ spring:
   application:
     name: play
 
+cloudpvp:
+  play:
+    games:
+      - key: CS2
+        name: CS2
+        description: ""
+        types:
+          - key: TEST-CS2
+            name: 测试1
+            modes:
+              - key: TEST-CS2
+                name: 测试模式
+                description: 测试模式，用于初期平台技术验证
+      - key: CSGO
+        name: CS:GO
+        description: ""
+        types:
+          - key: TEST-CSGO
+            name: 测试2
+            modes:
+              - key: TEST-CSGO
+                name: 测试模式
+                description: 测试模式，用于初期平台技术验证
+
 apollo:
   bootstrap:
     namespaces: application.yml, cloudpvp-dev.eureka.yml
